@@ -20,7 +20,8 @@
   url("./fonts/FuturaPT-Bold.woff2") format("woff2");
 }
 *{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html {
   height: 100%;
@@ -53,9 +54,15 @@ body {
 }
 .header-adress {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .start-link {
   margin-right: 128px;
@@ -81,6 +88,14 @@ body {
   line-height: normal;
   font-style: normal;
   text-decoration: none;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -94,6 +109,8 @@ body {
   opacity: 0.6;
 }
 .adress-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 119px;
   margin-top: 0;
@@ -135,11 +152,15 @@ body {
   content: "";
 }
 .time-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   gap: 17px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 0;
   list-style: none;
 }
@@ -170,9 +191,15 @@ body {
 }
 .header-wrap {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
   z-index: 1;
@@ -191,9 +218,15 @@ body {
   text-decoration: none;
 }
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -221,6 +254,14 @@ body {
   line-height: normal;
   text-decoration: none;
   border-bottom: 5px solid transparent;
+  -webkit-transition:
+  color 0.3s linear,
+  border 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  border 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   border 0.3s linear,
@@ -239,6 +280,14 @@ body {
   font-size: 16px;
   line-height: normal;
   text-decoration: none;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -308,6 +357,14 @@ body {
   border-radius: 3px;
   background-color: #333;
   text-decoration: none;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -356,8 +413,12 @@ body {
   line-height: 20px;
 }
 .intro__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-left: 0;
   list-style: none;
 }
@@ -447,6 +508,8 @@ body {
 }
 .search__wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
 }
@@ -505,8 +568,12 @@ body {
   content: "";
 }
 .article-blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   margin-bottom: 70px;
   color: #949494;
@@ -572,6 +639,14 @@ body {
   background-color: #f9f9f9;
   border: none;
   z-index: 5;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -587,6 +662,14 @@ body {
   background-color: #f9f9f9;
   border: none;
   z-index: 5;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -625,9 +708,15 @@ body {
   opacity: 0.6;
 }
 .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 1223px;
   margin: 0 auto;
   margin-bottom: 0;
@@ -643,6 +732,14 @@ body {
   border-radius: 5px;
   margin: 0;
   border: 1px solid #f3f3f3;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -752,8 +849,12 @@ body {
   height: 76px;
 }
 .services-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1223px;
   margin: 0 auto;
   border-radius: 0px 5px 5px 5px;
@@ -804,6 +905,14 @@ body {
   border-radius: 3px;
   background: #ffbd54;
   text-decoration: none;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -835,6 +944,14 @@ body {
   border-radius: 3px;
   background: #333;
   text-decoration: none;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -897,6 +1014,14 @@ body {
   border-radius: 3px;
   background-color: #333;
   border: none;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -938,6 +1063,8 @@ body {
 .useful-list {
   margin-top: 0;
   margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding-left: 0;
@@ -956,8 +1083,12 @@ opacity: 0.8;
   opacity: 0.6;
 }
 .house-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   padding-left: 0;
 }
@@ -1002,6 +1133,14 @@ opacity: 0.8;
   font-size: 16px;
   line-height: normal;
   text-decoration: none;
+  -webkit-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
+  -o-transition:
+  color 0.3s linear,
+  background-color 0.3s linear,
+  opacity 0.3s linear;
   transition:
   color 0.3s linear,
   background-color 0.3s linear,
@@ -1015,6 +1154,8 @@ opacity: 0.8;
   opacity: 0.6;
 }
 .useful-link::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 25px;
   height: 25px;
@@ -1033,6 +1174,8 @@ opacity: 0.8;
 .usefull-item {
 }
 .active__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 24px;
 }
@@ -1130,9 +1273,16 @@ opacity: 0.8;
   line-height: 20px;
 }
 .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .contact-input {
   width: 375px;
@@ -1167,6 +1317,30 @@ opacity: 0.8;
   line-height: normal;
   background-color: #ffbd54;
 }
+.contact-textarea::-webkit-input-placeholder {
+  color: #949494;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-textarea::-moz-placeholder {
+  color: #949494;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-textarea:-ms-input-placeholder {
+  color: #949494;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-textarea::-ms-input-placeholder {
+  color: #949494;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
 .contact-textarea::placeholder {
   color: #949494;
   font-size: 16px;
@@ -1183,15 +1357,18 @@ opacity: 0.8;
 }
 .footer-address {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer-logo:hover {
   opacity: 0.8;
 }
 .footer-logo:active {
   opacity: 0.6;
-}
 }
 .link-wrap {
   width: 157px;
@@ -1221,6 +1398,12 @@ opacity: 0.8;
     line-height: normal;
     text-decoration: none;
     border-bottom: 5px solid transparent;
+    -webkit-transition:
+    color 0.3s linear,
+    opacity 0.3s linear;
+    -o-transition:
+    color 0.3s linear,
+    opacity 0.3s linear;
     transition:
     color 0.3s linear,
     opacity 0.3s linear;
