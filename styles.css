@@ -46,6 +46,9 @@ body {
 
 /* Header started */
 .site-header {
+  position: fixed;
+  width: 100%;
+  z-index: 15;
   background-color: #fff;
 }
 .header-start {
@@ -313,7 +316,7 @@ body {
 /* Hero section started  */
 
 .hero {
-  padding-top: 153px;
+  padding-top: 373px;
   padding-right: 97px;
   padding-bottom: 354px;
   background-position: calc(50% - 515px) calc(50% + -91px), calc(50% - -740px) calc(50% + 160px);
@@ -385,11 +388,11 @@ body {
 /* Hero section finished */
 /* CONTACT INTRO STARTED */
 .intro {
-  padding-top: 111px;
-  background-image: url("./images/contactibg.png");
+  padding-top: 201px;
+  background-image: url("./images/bigdog.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: calc(50% - -476px) calc(50% + 0px);
+  background-size: 487px 548px;
+  background-position: calc(50% - -476px) calc(50% + 100px);
 }
 .intro__wrapper {
   margin-left: 104px;
@@ -546,7 +549,7 @@ body {
 }
 .site-faq__hero {
   margin-left: 195px;
-  padding-top: 118px;
+  padding-top: 280px;
   padding-bottom: 273px;
   background-image: url("./images/catfaq.png"), url("./images/birds.png");
   background-repeat: no-repeat;
@@ -742,8 +745,8 @@ body {
 }
 .article-wrapper::before {
   position: absolute;
-  top: calc(25% - 115px);
-  left: calc(50% + -434px);
+  top: calc(25% - -640px);
+  left: calc(50% + -436px);
   width: 142px;
   height: 128px;
   background-image: url("./images/left.svg");
@@ -752,8 +755,8 @@ body {
 }
 .article-wrapper::after {
   position: absolute;
-  top: calc(25% - 54px);
-  right: calc(50% + -580px);
+  top: calc(25% - -700px);
+  right: calc(50% + -591px);
   width: 142px;
   height: 128px;
   background-image: url("./images/right.svg");
@@ -777,8 +780,8 @@ body {
 }
 .article-blockquote::before {
   position: absolute;
-  top: calc(25% - 124px);
-  left: calc(50% + -79px);
+  top: calc(25% - -620px);
+  left: calc(50% + -87px);
   width: 142px;
   height: 1px;
   background-image: url("./images/line.svg");
@@ -787,8 +790,8 @@ body {
 }
 .article-blockquote::after {
   position: absolute;
-  top: calc(25% - -23px);
-  left: calc(50% + -79px);
+  top: calc(25% - -790px);
+  left: calc(50% + -87px);
   width: 142px;
   height: 1px;
   background-image: url("./images/line.svg");
