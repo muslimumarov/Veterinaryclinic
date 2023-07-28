@@ -547,12 +547,12 @@ body {
 /* hero section started */
 .site-faq__hero {
   margin-left: 195px;
-  padding-top: 280px;
+  padding-top: 234px;
   padding-bottom: 273px;
   background-image: url("./images/catfaq.png"), url("./images/birds.png");
   background-repeat: no-repeat;
   background-size: 569px 466px, 654px 640px;
-  background-position: calc(50% - 414px) calc(50% + -595px), calc(50% - -407px) calc(50% + 490px);
+  background-position: calc(50% - -432px) calc(50% + -534px), calc(50% - -407px) calc(50% + 490px);
 
 }
 .site-faq__wrapper {
@@ -914,12 +914,14 @@ body {
   border-radius: 3px;
   background: #ffbd54;
   text-decoration: none;
+  transition: background-color 0.3s linear;
 }
 .servises__link:hover {
   background-color: #000;
+  transition: color 0.3s linear;
 }
 .servises__link--active {
-background-color: #78C0DE;
+background-color: #78c0de;
 }
 /* SERVICES FINISHED  */
 /* Article section started  */
