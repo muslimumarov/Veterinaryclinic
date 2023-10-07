@@ -1103,7 +1103,7 @@ body {
   right: 256px;
   width: 25px;
   height: 30px;
-  background-image: url("./images/dog.svg");
+  /* background-image: url("./images/dog.svg"); */
   content: "";
 }
 /* medical section finished  */
@@ -1172,14 +1172,15 @@ body {
   padding-bottom: 191px;
 }
 .article-wrapper {
+  position: relative;
   width: 753px;
   margin-left: 313px;
   margin-right: 244px;
 }
 .article-wrapper::before {
   position: absolute;
-  top: calc(25% - -640px);
-  left: calc(50% + -436px);
+  top: calc(50% - 132px);
+  left: calc(50% + -463px);
   width: 142px;
   height: 128px;
   background-image: url("./images/left.svg");
@@ -1188,8 +1189,8 @@ body {
 }
 .article-wrapper::after {
   position: absolute;
-  top: calc(25% - -700px);
-  right: calc(50% + -591px);
+  top: calc(25% - 3px);
+  right: calc(50% + -592px);
   width: 142px;
   height: 128px;
   background-image: url("./images/right.svg");
@@ -1213,8 +1214,8 @@ body {
 }
 .article-blockquote::before {
   position: absolute;
-  top: calc(25% - -620px);
-  left: calc(50% + -87px);
+  top: calc(25% - 91px);
+  left: calc(50% + -68px);
   width: 142px;
   height: 1px;
   background-image: url("./images/line.svg");
@@ -1223,8 +1224,8 @@ body {
 }
 .article-blockquote::after {
   position: absolute;
-  top: calc(25% - -790px);
-  left: calc(50% + -87px);
+  top: calc(25% - -74px);
+  left: calc(50% + -68px);
   width: 142px;
   height: 1px;
   background-image: url("./images/line.svg");

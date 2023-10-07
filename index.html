@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="./normalize.css"> -->
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./aos.css">
   <!-- <link rel="stylesheet" href="./mini.css"> -->
   <title>Vetrinary clinic</title>
 </head>
@@ -99,9 +100,9 @@
     </div>
     <!-- Article section finished  -->
     <!-- Servise section started  -->
-    <section class="services">
+    <section class="services" data-aos="fade-up" data-aos-duration="2000">
       <div class="container">
-        <h2 class="services-title">Наши услуги</h2>
+        <h2 class="services-title" data-aos="fade-up"  data-aos-duration="1500">Наши услуги</h2>
         <div class="services-wrapper">
           <button type="button" class="services-button"></button>
           <ol class="services-list">
@@ -152,7 +153,7 @@
     </section>
     <!-- Servise section finished  -->
     <!-- Article subscript started  -->
-    <article class="article-subscript">
+    <article class="article-subscript" data-aos="zoom-in"  data-aos-duration="1500">
       <div class="container">
         <div class="subscript-wrapper">
           <h2 class="subscript-title">Будь в курсе событий</h2>
@@ -166,9 +167,9 @@
     <!-- Article subscript finished  -->
     <section class="useful">
       <div class="container">
-        <h2 class="useful-title">Полезные статьи</h2>
+        <h2 class="useful-title" data-aos="zoom-in-up">Полезные статьи</h2>
         <ul class="useful-list">
-          <li class="useful-item active-list__item">
+          <li class="useful-item active-list__item" data-aos="fade-right"  data-aos-duration="1000">
             <img src="./images/cattt.png" width="305" height="180" alt="cat's image" class="useful-image">
             <div class="useful-wrap">
               <time datetime="2020-08-28" class="useful-time">28.08.2020</time>
@@ -205,7 +206,7 @@
               </li>
             </ul>
           </li>
-          <li class="useful-item">
+          <li class="useful-item" data-aos="fade-left"  data-aos-duration="1000">
             <img src="./images/muolaja.png" width="305" height="180" alt="treatment's image" class="useful-image">
             <div class="useful-wrap">
               <time datetime="2020-07-21" class="useful-time">21.07.2020</time>
@@ -226,16 +227,16 @@
         <div class="contact-wrapper">
           <div class="frame-wrap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2715.565682645302!2d37.642411599999996!3d47.1075844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e6701cd9c691%3A0xe9b99fd0268f089c!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCA0ONCwLCDQnNCw0YDQuNGD0L_QvtC70YwsINCU0L7QvdC10YbQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCwLCA4NzUwMA!5e0!3m2!1sru!2s!4v1688660190883!5m2!1sru!2s" width="462" height="652" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
           <div class="contact-wrap">
-            <h2 class="contact-title">Обратная связь</h2>
+            <h2 data-aos="zoom-in-down"  data-aos-duration="1000" class="contact-title">Обратная связь</h2>
             <div class="text-wrap">
               <p class="contact-text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
             </div>
             <form action="https://echo.htmlacademy.ru" method="POST" autocomplete="off" class="contact-form">
-              <input type="text"
+              <input data-aos="fade-right"  data-aos-duration="1000" type="text"
               placeholder="Ваше имя" name="user_name" aria-label="user name" class="contact-input" required>
-              <input type="email" name="user_email" aria-label="user email" placeholder="Email для обратной связи" class="contact-input" required>
-              <textarea name="user_feedback" aria-label="user feedback" cols="30" rows="10" class="contact-textarea" placeholder="Опишите Ваш вопрос."></textarea>
-              <button type="submit" class="contact-button">Задать нам вопрос</button>
+              <input data-aos="fade-left"  data-aos-duration="1000" type="email" name="user_email" aria-label="user email" placeholder="Email для обратной связи" class="contact-input" required>
+              <textarea data-aos="fade-right"  data-aos-duration="1000" name="user_feedback" aria-label="user feedback" cols="30" rows="10" class="contact-textarea" placeholder="Опишите Ваш вопрос."></textarea>
+              <button data-aos="fade-left"  data-aos-duration="1000" type="submit" class="contact-button">Задать нам вопрос</button>
             </form>
           </div>
         </div>
@@ -302,7 +303,10 @@
       <p class="footer-desc">© 2020 example. All Rights Reserved.</p>
     </div>
   </footer>
-
+<script src="./aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
